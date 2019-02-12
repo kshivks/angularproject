@@ -1,0 +1,42 @@
+<div class='image'>
+  <div style="margin: auto;width: 50%; margin-bottom:3%">
+    <b>Enter the City Name </b>
+    <input type="text" [(ngModel)]="cityName" />
+
+    <button type="button" (click)="getDetails(cityName)">Click</button>
+  </div>
+
+  <div style="margin: auto;width: 50%;">
+      <div style="margin-top:3%;margin: auto;width: 50%;">
+          <b>Details of  {{ weatherDetails?.name }}</b>
+        </div>
+    <div>
+      <b>Co - ordinates Details</b>
+    </div>
+
+    <div>Longitude : {{ weatherDetails?.coord.lon }}</div>
+
+    <div>Latitude : {{ weatherDetails?.coord.lat }}</div>
+  </div>
+
+  <div style="margin: auto;width: 50%;">
+    <div><b>Weather Details (Temperature in kelvin) </b></div>
+
+    <div>Minimum Temerature : {{ weatherDetails?.main.temp_min }}</div>
+
+    <div>Maximum Temerature : {{ weatherDetails?.main.temp_max }}</div>
+
+    <div>Pressure : {{ weatherDetails?.main.pressure }}</div>
+
+    <div>Humiditiy : {{ weatherDetails?.main.humidity }}</div>
+  </div>
+
+  <div style="margin: auto;width: 50%;">
+    <div><b>Wind Details </b></div>
+
+    <div>Degree : {{ weatherDetails?.wind.deg }}</div>
+
+    <div>Speed : {{ weatherDetails?.wind.speed }}</div>
+  </div>
+</div>
+

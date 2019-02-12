@@ -1,0 +1,38 @@
+:host{
+    flex-grow: 1;display:flex;
+    justify-content:center;
+    align-items:center;
+    /* background-size 100% 100%; */
+}
+
+body{
+    background-color:lightblue !important;
+}
+
+ div.input{
+     position:relative;
+    
+    }
+ div.input label{
+     position:relative;
+     top:0;
+     left:0px;background:white;padding:5px 2px;
+     
+    color: #ff0000d1;
+
+     
+     }
+ div.input input{
+     padding: 10px 20px;font-size: 15px;outline:0;
+     
+    margin-bottom: 20px;
+
+ }
+
+ .button-class {
+    background-color: #4CAF50;
+    padding: 4px 20px !important;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 130px;
+ }
